@@ -1,0 +1,75 @@
+.header {
+  padding-block: fluid(25, 15);
+
+  @include mobile {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    // animation-range: rem(100) rem(200);
+
+    @keyframes scrolling-header {
+      to {
+        box-shadow: 0 0 1rem 0 var(--color-base);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__overlay {
+    @include mobile-above {
+      display: contents;
+    }
+
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 48px;
+      padding: 16px;
+      background-color: var(--color-base);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      column-gap: fluid(50, 25);
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 36px;
+      }
+    }
+
+    &-link {
+      @include hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 20px;
+  }
+}

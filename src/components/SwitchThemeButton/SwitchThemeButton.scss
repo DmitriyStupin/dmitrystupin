@@ -1,0 +1,31 @@
+.switch-theme__button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: var(--color-base-variant);
+
+  svg {
+    fill: var(--color-primary);
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .darkmode & {
+    svg {
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}

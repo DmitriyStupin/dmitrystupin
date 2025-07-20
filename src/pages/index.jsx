@@ -1,12 +1,7 @@
-import { Head } from "minista"
-
-export default function () {
+export default () => {
   return (
     <>
-      <Head>
-        <title>Hello!</title>
-      </Head>
-      <h1>Hello!</h1>
+      <h1>Привет медвед</h1>
     </>
   )
 }
