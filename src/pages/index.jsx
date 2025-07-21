@@ -1,7 +1,9 @@
+import About from "@/sections/About"
+
 export default () => {
   return (
     <>
-      <h1>Привет медвед</h1>
+      <About />
     </>
   )
 }

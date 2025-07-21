@@ -7,7 +7,7 @@ export default () => {
   const menuItems = [
     {
       label: "About",
-      href: "/",
+      href: "#about",
     },
     {
       label: "Skills",

@@ -1,0 +1,100 @@
+.about {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(64, 16);
+    max-width: 500px;
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(30, 15);
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__button {
+    padding: fluid(15, 10);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-m);
+    color: var(--color-base);
+    font-size: fluid(24, 16);
+
+    &--white {
+      background-color: var(--color-text);
+      color: var(--color-base);
+
+      @include hover {
+        color: var(--color-text-secondary);
+        background-color: var(--color-base);
+      }
+    }
+  }
+
+  &__title {
+    span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__subtitle {
+    font-size: fluid(40, 16);
+    font-weight: 200;
+    overflow: hidden;
+    border-right: 0.15em solid var(--color-accent);
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    width: 0;
+    animation: typing 3s steps(28, end) forwards,
+      blink-caret 0.75s step-end infinite;
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 30ch;
+      }
+    }
+
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: var(--color-accent);
+      }
+    }
+  }
+
+  &__image {
+    max-width: 50%;
+
+    @include mobile {
+      max-width: 80%;
+    }
+
+    @include mobile-s {
+      max-width: 100%;
+    }
+  }
+}
