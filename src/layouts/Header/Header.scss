@@ -7,15 +7,7 @@
     z-index: 1000;
     animation-name: scrolling-header;
     animation-fill-mode: both;
-    animation-timeline: scroll();
-    // animation-range: rem(100) rem(200);
     background-color: var(--color-primary);
-
-    @keyframes scrolling-header {
-      to {
-        box-shadow: 0 0 1rem 0 var(--color-base);
-      }
-    }
   }
 
   &__inner {

@@ -1,6 +1,6 @@
 .burger-button {
   @include flex-center(true);
-  @include square(51px);
+  @include square(40px);
 
   padding: 0;
   position: relative;

@@ -1,0 +1,53 @@
+.footer {
+  padding: fluid(60, 30) 0;
+  background-color: var(--color-bg-secondary);
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+
+    @include hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+
+    @include hover {
+      filter: none;
+    }
+  }
+
+  &__copy {
+    font-size: fluid(16, 14);
+    color: var(--color-text-secondary);
+  }
+}

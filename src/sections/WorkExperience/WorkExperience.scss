@@ -1,0 +1,66 @@
+.experience {
+  &__title {
+    margin-bottom: fluid(48, 24);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid(40, 20);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: fluid(24, 16);
+    border-left: 4px solid var(--color-accent);
+    background: var(--color-base-variant);
+    border-radius: var(--border-radius-m);
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &-title {
+      font-size: fluid(24, 18);
+      font-weight: 600;
+    }
+    &-logo {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: fluid(16, 14);
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    font-size: fluid(16, 14);
+    line-height: 1.5;
+  }
+
+  &__button {
+    font-size: 14px;
+    align-self: start;
+
+    @include hover {
+        color: var(--color-text-secondary);
+        background-color: var(--color-base);
+      }
+  }
+  
+  &__actions {
+    display: flex;
+    column-gap: 10px;
+  }
+}
