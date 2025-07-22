@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitry Stupin | Frontend Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/dmitrystupin/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/dmitrystupin/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dmitrystupin/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/dmitrystupin/assets/site.webmanifest">
+    <script src="/dmitrystupin/assets/main.js" type="module" defer="true"></script>
+    <link rel="stylesheet" href="/dmitrystupin/assets/bundle.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo" title="Home">Dmitry Stupin</a>
+        <div class="header__overlay" data-js-overlay="true">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item" data-js-menu-item="true">
+                <a href="#about" class="header__menu-link">About</a>
+              </li>
+              <li class="header__menu-item" data-js-menu-item="true">
+                <a href="#skills" class="header__menu-link">Skills</a>
+              </li>
+              <li class="header__menu-item" data-js-menu-item="true">
+                <a href="#portfolio" class="header__menu-link">Portfolio</a>
+              </li>
+              <li class="header__menu-item" data-js-menu-item="true">
+                <a href="#experience" class="header__menu-link">Work Experience</a>
+              </li>
+              <li class="header__menu-item" data-js-menu-item="true">
+                <a href="#contacts" class="header__menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__actions">
+          <button class="switch-theme__button" type="button" data-js-switch-theme-button="">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+              <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+              <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"></path>
+            </svg>
+          </button>
+          <button class="header__burger-button visible-mobile burger-button" type="button" title="Open Menu" data-js-burger-button="">
+            <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+              <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+              <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+              <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="about" id="about">
+        <div class="about__inner container">
+          <h1 class="visually-hidden">Dmitry Stupin</h1>
+          <div class="about__info">
+            <div class="about__text">
+              <p class="about__title h1">Hello! My name is <span>Dmitry Stupin.</span></p>
+              <p class="about__subtitle">And I&#x27;m a Frontend Developer</p>
+            </div>
+            <div class="about__actions">
+              <a class="about__button button" title="View Portfolio" href="#portfolio"><span class="button__label">View Portfolio</span></a>
+              <a class="about__button about__button--white visually-hidden button" title="My Resume" href="#portfolio"><span class="button__label">My Resume</span></a>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="/dmitrystupin/assets/images/bg.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="skills__inner container">
+          <h2 class="skills__title h2">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/html5.svg" alt="HTML5" class="skills__icon"><span>HTML5</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/css.svg" alt="CSS3" class="skills__icon"><span>CSS3</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/sass.svg" alt="SCSS" class="skills__icon"><span>SCSS</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/javascript.svg" alt="JavaScript" class="skills__icon"><span>JavaScript</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/react.svg" alt="React (Basics)" class="skills__icon"><span>React (Basics)</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/vite.svg" alt="Vite" class="skills__icon"><span>Vite</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/minista.svg" alt="Minista" class="skills__icon"><span>Minista</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/postcss.svg" alt="PostCSS" class="skills__icon"><span>PostCSS</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/git.svg" alt="Git / GitHub" class="skills__icon"><span>Git / GitHub</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/npm.svg" alt="NPM" class="skills__icon"><span>NPM</span>
+            </li>
+            <li class="skills__item">
+              <img src="/dmitrystupin/assets/images/bem.svg" alt="BEM Methodology" class="skills__icon"><span>BEM Methodology</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio__inner container">
+          <h2 class="portfolio__title h2">Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <img src="/dmitrystupin/assets/images/u-stipend.png" alt="U-Stipend" class="portfolio__image">
+              <div class="portfolio__content">
+                <h3 class="portfolio__name">U-Stipend<!-- --> (<!-- -->May 2025<!-- -->)</h3>
+                <p class="portfolio__description">A convenient scholarship calculation service for students Siberian Federal University (Krasnoyarsk, Russia)</p>
+                <ul class="portfolio__tech">
+                  <li>
+                    <img src="/dmitrystupin/assets/images/html5.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/sass.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/javascript.svg" alt="" class="portfolio__icon">
+                  </li>
+                </ul>
+                <div class="portfolio__links">
+                  <a class="button button" title="Visit" href="https://u-stipend.ru/" target="_blank"><span class="button__label">Visit</span></a>
+                  <a class="button button--black button" title="GitHub" href="https://github.com/IKIT-Group/u-stipend" target="_blank"><span class="button__label">GitHub</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <img src="/dmitrystupin/assets/images/stream-vibe.png" alt="Stream Vibe" class="portfolio__image">
+              <div class="portfolio__content">
+                <h3 class="portfolio__name">Stream Vibe<!-- --> (<!-- -->February 2025<!-- -->)</h3>
+                <p class="portfolio__description">A multi-page web application for a streaming service using a modern technology stack</p>
+                <ul class="portfolio__tech">
+                  <li>
+                    <img src="/dmitrystupin/assets/images/sass.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/javascript.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/minista.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/postcss.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/vite.svg" alt="" class="portfolio__icon">
+                  </li>
+                </ul>
+                <div class="portfolio__links">
+                  <a class="button button" title="Visit" href="https://dmitriystupin.github.io/stream-vibe/dist/" target="_blank"><span class="button__label">Visit</span></a>
+                  <a class="button button--black button" title="GitHub" href="https://github.com/DmitriyStupin/stream-vibe" target="_blank"><span class="button__label">GitHub</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <img src="/dmitrystupin/assets/images/future-tech.png" alt="Future Tech" class="portfolio__image">
+              <div class="portfolio__content">
+                <h3 class="portfolio__name">Future Tech<!-- --> (<!-- -->January 2025<!-- -->)</h3>
+                <p class="portfolio__description">A multi-page website using SCSS written with components in JS</p>
+                <ul class="portfolio__tech">
+                  <li>
+                    <img src="/dmitrystupin/assets/images/html5.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/sass.svg" alt="" class="portfolio__icon">
+                  </li>
+                  <li>
+                    <img src="/dmitrystupin/assets/images/javascript.svg" alt="" class="portfolio__icon">
+                  </li>
+                </ul>
+                <div class="portfolio__links">
+                  <a class="button button" title="Visit" href="https://dmitriystupin.github.io/FutureTech/" target="_blank"><span class="button__label">Visit</span></a>
+                  <a class="button button--black button" title="GitHub" href="https://github.com/DmitriyStupin/FutureTech" target="_blank"><span class="button__label">GitHub</span></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <div class="experience__inner container">
+          <h2 class="experience__title h2">Experience</h2>
+          <ul class="experience__list">
+            <li class="experience__item" style="border-left-color:#EE3A43">
+              <div class="experience__company">
+                <h3 class="experience__company-title">Piterskiy Mostik</h3>
+                <img class="experience__company-logo" src="/dmitrystupin/assets/images/piterskiy-mostik.svg" alt="">
+              </div>
+              <div class="experience__meta"><span class="experience__position">The Intern</span><span class="experience__period">June - July (2024)</span></div>
+              <p class="experience__description">Creating a BookStack knowledge base using a Virtual Machine and Red Hat Enterprise Linux OS</p>
+              <div class="experience__actions"></div>
+            </li>
+            <li class="experience__item" style="border-left-color:#3FB6A3">
+              <div class="experience__company">
+                <h3 class="experience__company-title">Digital Sky Innovations Engineering Hackathon</h3>
+                <img class="experience__company-logo" src="/dmitrystupin/assets/images/kritbi.svg" alt="">
+              </div>
+              <div class="experience__meta"><span class="experience__position">Frontend Developer</span><span class="experience__period">17 - 18 April (2025)</span></div>
+              <p class="experience__description">UAS mobile configurator for UAV configuration selection for the client&#x27;s tasks with cost calculation and request generation</p>
+              <div class="experience__actions">
+                <a class="button experience__button button" title="View Certificate" href="/public/kritbi.pdf" target="_blank"><span class="button__label">View Certificate</span></a>
+                <a class="button button--black experience__button button" title="GitHub" href="https://github.com/DmitriyStupin/CRITBY-HACKATON_17-18.04.2025" target="_blank"><span class="button__label">GitHub</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer__inner container">
+        <ul class="footer__socials">
+          <li class="footer__item">
+            <a href="mailto:dm.stup@mail.ru" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Email">
+              <img src="/dmitrystupin/assets/images/maildotru.svg" alt="Email" class="footer__icon">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://t.me/stupin_dmitry" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Telegram">
+              <img src="/dmitrystupin/assets/images/telegram.svg" alt="Telegram" class="footer__icon">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://github.com/DmitriyStupin" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="GitHub">
+              <img src="/dmitrystupin/assets/images/github.svg" alt="GitHub" class="footer__icon">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://vk.com/dmitry.stupin" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="VK">
+              <img src="/dmitrystupin/assets/images/vk.svg" alt="VK" class="footer__icon">
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copy">© <!-- -->2025<!-- --> Created by Dmitry Stupin with Love ^-^. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
