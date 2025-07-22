@@ -1,6 +1,9 @@
 import Button from "@/components/Button"
 import "./About.scss"
 
+// Импорт изображения
+import bgImage from "@/assets/images/bg.png"
+
 export default () => {
   return (
     <section className="about" id="about">
@@ -28,7 +31,7 @@ export default () => {
         </div>
 
         <div className="about__image">
-          <img src="/src/assets/images/bg.png" alt="" />
+          <img src={bgImage} alt="" />
         </div>
       </div>
     </section>

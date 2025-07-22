@@ -1,12 +1,16 @@
 import Button from "@/components/Button"
 import "./WorkExperience.scss"
 
+// Импорт логотипов
+import piterskiyLogo from "@/assets/icons/piterskiy-mostik.svg"
+import kritbiLogo from "@/assets/icons/kritbi.svg"
+
 export default () => {
   const experience = [
     {
       company: "Piterskiy Mostik",
       position: "The Intern",
-      logo: "/src/assets/icons/piterskiy-mostik.svg",
+      logo: piterskiyLogo,
       period: "June - July (2024)",
       description:
         "Creating a BookStack knowledge base using a Virtual Machine and Red Hat Enterprise Linux OS",
@@ -15,7 +19,7 @@ export default () => {
     {
       company: "Digital Sky Innovations Engineering Hackathon",
       position: "Frontend Developer",
-      logo: "/src/assets/icons/kritbi.svg",
+      logo: kritbiLogo,
       period: "17 - 18 April (2025)",
       description:
         "UAS mobile configurator for UAV configuration selection for the client's tasks with cost calculation and request generation",

@@ -35,7 +35,7 @@ export default () => {
           <nav className="header__menu">
             <ul className="header__menu-list">
               {menuItems.map(({ label, href }, index) => (
-                <li className="header__menu-item" key={index}>
+                <li className="header__menu-item" key={index} data-js-menu-item>
                   <a href={href} className="header__menu-link">
                     {label}
                   </a>

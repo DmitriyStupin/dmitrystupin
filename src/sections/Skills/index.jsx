@@ -1,18 +1,31 @@
 import "./Skills.scss"
 
+// Импорт всех иконок
+import htmlIcon from "@/assets/icons/html5.svg"
+import cssIcon from "@/assets/icons/css.svg"
+import sassIcon from "@/assets/icons/sass.svg"
+import jsIcon from "@/assets/icons/javascript.svg"
+import reactIcon from "@/assets/icons/react.svg"
+import viteIcon from "@/assets/icons/vite.svg"
+import ministaIcon from "@/assets/icons/minista.svg"
+import postcssIcon from "@/assets/icons/postcss.svg"
+import gitIcon from "@/assets/icons/git.svg"
+import npmIcon from "@/assets/icons/npm.svg"
+import bemIcon from "@/assets/icons/bem.svg"
+
 export default () => {
   const skills = [
-    { label: "HTML5", icon: "/src/assets/icons/html5.svg"},
-    { label: "CSS3", icon: "/src/assets/icons/css.svg"},
-    { label: "SCSS", icon: "/src/assets/icons/sass.svg"},
-    { label: "JavaScript", icon: "/src/assets/icons/javascript.svg"},
-    { label: "React (Basics)", icon: "/src/assets/icons/react.svg"},
-    { label: "Vite", icon: "/src/assets/icons/vite.svg"},
-    { label: "Minista", icon: "/src/assets/icons/minista.svg"},
-    { label: "PostCSS", icon: "/src/assets/icons/postcss.svg"},
-    { label: "Git / GitHub", icon: "/src/assets/icons/git.svg"},
-    { label: "NPM", icon: "/src/assets/icons/npm.svg"},
-    { label: "BEM Methodology", icon: "/src/assets/icons/bem.svg"},
+    { label: "HTML5", icon: htmlIcon },
+    { label: "CSS3", icon: cssIcon },
+    { label: "SCSS", icon: sassIcon },
+    { label: "JavaScript", icon: jsIcon },
+    { label: "React (Basics)", icon: reactIcon },
+    { label: "Vite", icon: viteIcon },
+    { label: "Minista", icon: ministaIcon },
+    { label: "PostCSS", icon: postcssIcon },
+    { label: "Git / GitHub", icon: gitIcon },
+    { label: "NPM", icon: npmIcon },
+    { label: "BEM Methodology", icon: bemIcon },
   ]
 
   return (
@@ -20,7 +33,7 @@ export default () => {
       <div className="skills__inner container">
         <h2 className="skills__title h2">Skills</h2>
         <ul className="skills__list">
-          {skills.map(({ label, icon, color }, index) => (
+          {skills.map(({ label, icon }, index) => (
             <li className="skills__item" key={index}>
               <img
                 src={icon}

@@ -1,6 +1,19 @@
 import Button from "@/components/Button"
 import "./Portfolio.scss"
 
+// Импорт иконок для технологий
+import html5Icon from "@/assets/icons/html5.svg"
+import sassIcon from "@/assets/icons/sass.svg"
+import jsIcon from "@/assets/icons/javascript.svg"
+import ministaIcon from "@/assets/icons/minista.svg"
+import postcssIcon from "@/assets/icons/postcss.svg"
+import viteIcon from "@/assets/icons/vite.svg"
+
+// Импорт изображений проектов
+import uStipendImg from "@/assets/images/u-stipend.png"
+import streamVibeImg from "@/assets/images/stream-vibe.png"
+import futureTechImg from "@/assets/images/future-tech.png"
+
 export default () => {
   const projects = [
     {
@@ -8,17 +21,17 @@ export default () => {
       description:
         "A convenient scholarship calculation service for students Siberian Federal University (Krasnoyarsk, Russia)",
       date: "May 2025",
-      tech: ["/src/assets/icons/html5.svg", "/src/assets/icons/sass.svg", "/src/assets/icons/javascript.svg"],
-      image: "/src/assets/images/u-stipend.png",
+      tech: [html5Icon, sassIcon, jsIcon],
+      image: uStipendImg,
       demo: "https://u-stipend.ru/",
       github: "https://github.com/IKIT-Group/u-stipend",
     },
     {
       title: "Stream Vibe",
       description: "A multi-page web application for a streaming service using a modern technology stack",
-      date: "Febraury 2025",
-      tech: ["/src/assets/icons/sass.svg", "/src/assets/icons/javascript.svg", "/src/assets/icons/minista.svg", "/src/assets/icons/postcss.svg", "/src/assets/icons/vite.svg"],
-      image: "/src/assets/images/stream-vibe.png",
+      date: "February 2025",
+      tech: [sassIcon, jsIcon, ministaIcon, postcssIcon, viteIcon],
+      image: streamVibeImg,
       demo: "https://dmitriystupin.github.io/stream-vibe/dist/",
       github: "https://github.com/DmitriyStupin/stream-vibe",
     },
@@ -26,8 +39,8 @@ export default () => {
       title: "Future Tech",
       description: "A multi-page website using SCSS written with components in JS",
       date: "January 2025",
-      tech: ["/src/assets/icons/html5.svg", "/src/assets/icons/sass.svg", "/src/assets/icons/javascript.svg"],
-      image: "/src/assets/images/future-tech.png",
+      tech: [html5Icon, sassIcon, jsIcon],
+      image: futureTechImg,
       demo: "https://dmitriystupin.github.io/FutureTech/",
       github: "https://github.com/DmitriyStupin/FutureTech",
     },
@@ -46,9 +59,9 @@ export default () => {
                   <h3 className="portfolio__name">{title} ({date})</h3>
                   <p className="portfolio__description">{description}</p>
                   <ul className="portfolio__tech">
-                    {tech.map((t, index) => (
-                      <li key={index}>
-                        <img src={t} className="portfolio__icon" />
+                    {tech.map((icon, idx) => (
+                      <li key={idx}>
+                        <img src={icon} alt="" className="portfolio__icon" />
                       </li>
                     ))}
                   </ul>
@@ -62,11 +75,11 @@ export default () => {
                       />
                     )}
                     <Button
-                        className="button button--black"
-                        href={github}
-                        label="GitHub"
-                        target="_blank"
-                      />
+                      className="button button--black"
+                      href={github}
+                      label="GitHub"
+                      target="_blank"
+                    />
                   </div>
                 </div>
               </li>

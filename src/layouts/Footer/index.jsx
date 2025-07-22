@@ -1,26 +1,32 @@
 import "./Footer.scss"
 
+// Импорт иконок
+import mailIcon from "@/assets/icons/socials/maildotru.svg"
+import telegramIcon from "@/assets/icons/socials/telegram.svg"
+import githubIcon from "@/assets/icons/socials/github.svg"
+import vkIcon from "@/assets/icons/socials/vk.svg"
+
 export default () => {
   const contacts = [
     {
       label: "Email",
       href: "mailto:dm.stup@mail.ru",
-      icon: "/src/assets/icons/socials/maildotru.svg",
+      icon: mailIcon,
     },
     {
       label: "Telegram",
       href: "https://t.me/stupin_dmitry",
-      icon: "/src/assets/icons/socials/telegram.svg",
+      icon: telegramIcon,
     },
     {
       label: "GitHub",
       href: "https://github.com/DmitriyStupin",
-      icon: "/src/assets/icons/socials/github.svg",
+      icon: githubIcon,
     },
     {
       label: "VK",
       href: "https://vk.com/dmitry.stupin",
-      icon: "/src/assets/icons/socials/vk.svg",
+      icon: vkIcon,
     },
   ]
 
