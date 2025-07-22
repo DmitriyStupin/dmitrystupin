@@ -1,3 +1,4 @@
+import Button from "@/components/Button"
 import "./About.scss"
 
 export default () => {
@@ -13,8 +14,16 @@ export default () => {
             <p className="about__subtitle">And I'm a Frontend Developer</p>
           </div>
           <div className="about__actions">
-            <a href="#portfolio" className="about__button">View Portfolio</a>
-            <a href="#portfolio" className="about__button about__button--white">Resume</a>
+            <Button
+              className="about__button"
+              label="View Portfolio"
+              href="#portfolio"
+            />
+            <Button
+              className="about__button about__button--white visually-hidden"
+              label="My Resume"
+              href="#portfolio"
+            />
           </div>
         </div>
 

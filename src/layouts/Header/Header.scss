@@ -9,6 +9,7 @@
     animation-fill-mode: both;
     animation-timeline: scroll();
     // animation-range: rem(100) rem(200);
+    background-color: var(--color-primary);
 
     @keyframes scrolling-header {
       to {

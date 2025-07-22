@@ -18,6 +18,10 @@ export default () => {
       href: "#portfolio",
     },
     {
+      label: "Work Experience",
+      href: "#experience",
+    },
+    {
       label: "Contacts",
       href: "#contacts",
     },

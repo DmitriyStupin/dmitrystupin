@@ -1,0 +1,17 @@
+.button {
+  padding: fluid(15, 10);
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius-m);
+  color: var(--color-base);
+  font-size: fluid(24, 16);
+
+  &--black {
+    background-color: var(--color-text);
+    color: var(--color-base);
+
+    @include hover {
+      color: var(--color-text-secondary);
+      background-color: var(--color-base);
+    }
+  }
+}
